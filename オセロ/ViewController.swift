@@ -22,7 +22,8 @@ extension UIView {
     }
 }
 
-var Finallocation: CGPoint?
+var Finallocation1: CGFloat?
+var Finallocation2: CGFloat?
 
 class ViewController: UIViewController {
 
@@ -266,7 +267,7 @@ class ViewController: UIViewController {
         
         // 移動した先の座標を取得.
         let location = aTouch.location(in: myLabel/*self.view*/)
-        Finallocation = location
+        
         
         // 移動する前の座標を取得.
         let prevLocation = aTouch.previousLocation(in: myLabel/*self.view*/)
@@ -281,7 +282,8 @@ class ViewController: UIViewController {
         // 移動した分の距離をmyFrameの座標にプラスする.
         myFrame.origin.x += deltaX
         myFrame.origin.y += deltaY
-        
+        Finallocation1 = myFrame.origin.x
+        Finallocation2 = myFrame.origin.x
         // frameにmyFrameを追加.
         myLabel/*self.view*/.frame = myFrame
     }
@@ -307,7 +309,7 @@ class ViewController: UIViewController {
             
         }
         
-        print("移動先の座標は\(Finallocation)です")
+        print("移動先の座標は、x=\(Finallocation1)、y=\(Finallocation2)です")
         
     }
     
