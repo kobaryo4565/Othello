@@ -37,6 +37,11 @@
                                             <action selector="trash:" destination="BYZ-38-t0r" id="qdb-B7-Fhw"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="add" id="VdS-T4-rDa">
+                                        <connections>
+                                            <action selector="Add:" destination="BYZ-38-t0r" id="BkP-0T-KBT"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
